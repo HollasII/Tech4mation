@@ -20,6 +20,7 @@ body header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 body header nav {
   display: flex;
@@ -54,25 +55,53 @@ body header .content .top h1 {
   letter-spacing: -2%;
   color: #fff;
 }
+@media only screen and (max-width: 481px) {
+  body header .content .top h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body header .content .top h1 {
+    font-size: 70px;
+  }
+}
 body header .content .top p {
   font-weight: 400;
   font-size: 20px;
   line-height: 33.9px;
   text-align: center;
   color: #fff;
-  width: 708px;
+}
+@media only screen and (max-width: 481px) {
+  body header .content .top p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  body header .content .top {
+    gap: 30px;
+  }
 }
 body header .content .bottom {
   position: relative;
   width: 650px;
   height: 400px;
   top: 75px;
-  left: 35px;
 }
 body header .content .bottom .im2 {
   position: absolute;
   top: -21.5%;
   left: -6%;
+}
+@media only screen and (max-width: 481px) {
+  body header .content .bottom {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body header .content .bottom {
+    display: none;
+  }
 }
 body main {
   display: flex;
@@ -95,19 +124,23 @@ body main .demo {
   flex-direction: row;
   gap: 20px;
   background: #fafafa;
+  padding: 20px 40px;
 }
 body main .demo #demo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 472px;
-  height: 389px;
   gap: 16px;
 }
 body main .demo #demo h2 {
   font-weight: 700;
   font-size: 70px;
   line-height: 68.4px;
+}
+@media only screen and (max-width: 481px) {
+  body main .demo #demo h2 {
+    font-size: 45px;
+  }
 }
 body main .demo #demo p {
   font-weight: 400;
@@ -117,12 +150,12 @@ body main .demo #demo p {
 body main .demo form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
-  width: 653px;
-  height: 442.24px;
   border: 1px solid #cbcbcb;
   border-radius: 8px;
+  padding: 30px;
+  gap: 20px;
 }
 body main .demo form h2 {
   font-weight: 600;
@@ -134,8 +167,6 @@ body main .demo form div {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  width: 517.26px;
-  height: 167.46px;
 }
 body main .demo form div label {
   font-weight: 400;
@@ -182,6 +213,39 @@ body main .demo form #cta {
 body main .demo form #cta:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 481px) {
+  body main .demo form #cta {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body main .demo form #cta {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  body main .demo form {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body main .demo form {
+    width: 400px;
+  }
+}
+body main .demo iframe {
+  display: none;
+}
+@media only screen and (max-width: 481px) {
+  body main .demo {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body main .demo {
+    flex-direction: column;
+  }
+}
 body main .elevate {
   gap: 30px;
 }
@@ -190,13 +254,22 @@ body main .elevate h2 {
   font-size: 70px;
   line-height: 77.4px;
   text-align: center;
-  height: 261px;
-  width: 1232px;
+  padding: 0 50px;
+}
+@media only screen and (max-width: 481px) {
+  body main .elevate h2 {
+    font-size: 45px;
+  }
 }
 body main .elevate p {
   font-weight: 400;
   font-size: 18px;
   line-height: 38.9px;
+}
+@media only screen and (max-width: 481px) {
+  body main .elevate p {
+    padding: 15px;
+  }
 }
 body main .elevate .img {
   margin-top: 40px;
@@ -205,6 +278,16 @@ body main .elevate .img {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media only screen and (max-width: 481px) {
+  body main .elevate .img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body main .elevate .img {
+    display: none;
+  }
 }
 body main .footer {
   gap: 20px;
@@ -225,9 +308,21 @@ body main .footer div nav ul {
   justify-content: center;
   gap: 20px;
 }
+@media only screen and (max-width: 481px) {
+  body main .footer div {
+    gap: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 body main .footer hr {
   color: #000b33;
-  width: 1201px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 body main .footer footer {
   font-weight: 500;
