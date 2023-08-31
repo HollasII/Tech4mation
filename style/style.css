@@ -235,6 +235,7 @@ body main .demo form #cta:hover {
 }
 body main .demo iframe {
   display: none;
+  width: 653px;
 }
 @media only screen and (max-width: 481px) {
   body main .demo {
